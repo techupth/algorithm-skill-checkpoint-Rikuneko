@@ -1,5 +1,17 @@
+// function findStudentById(students, id) {
+//   // Your code here
+//   let student = students.find(students => students.id === id)
+//   return student || null
+// }
+
 function findStudentById(students, id) {
   // Your code here
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].id === id) {
+      return students[i];
+    }
+  }
+  return null;
 }
 
 // Test case
